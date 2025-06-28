@@ -1,8 +1,8 @@
 function findLargestNumber(arr){
-    let tempLargestNumber = arr[0];
+    let tempLargestNumber = null;
 
     for(let i = 0; i < arr.length; i++){
-        if(arr[i] > tempLargestNumber){
+        if(!tempLargestNumber || arr[i] > tempLargestNumber){
             tempLargestNumber = arr[i]
         }
     }
