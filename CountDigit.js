@@ -2,9 +2,8 @@
 
 function countDigit(digit){
 
-    if(isNaN(digit)) { return "Give value is not digit" }
     if(!digit) { return "Value must required to count digit" }
-
+    if(isNaN(digit)) { return "Give value is not digit" }
     if(digit == 0) { return 1 } 
 
     let tempDigitCount = 0;
